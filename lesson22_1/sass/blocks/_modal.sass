@@ -1,0 +1,85 @@
+.modal
+    position: fixed
+    left: 0
+    top: 0
+    width: 100%
+    height: 100%
+    background-color: rgba(#000, 0.5)
+    display: none
+    &_active
+        display: flex
+    &-dialog
+        position: relative
+        margin: auto
+        max-width: 570px
+        width: 90%
+        min-width: 200px
+        max-height: 674px
+        background-color: #fff
+        padding: 72px 100px 74px
+        text-align: center
+        &__close
+            position: absolute
+            top: 0
+            right: 0
+        &__title
+            margin-top: 1px
+            font-size: 22px
+            +bold
+            line-height: 33px
+            margin-top: 0
+            margin-bottom: 37px
+        &__subtitle
+            display: block
+            font-size: 16px
+            +reg
+            line-height: 35px
+            margin-bottom: 42px
+        &__form
+            display: flex
+            flex-direction: column
+        &__input
+            border: 1px solid $border-input
+            padding: 23px
+            font-size: 15px
+            border-radius: 10px
+            &:first-child
+                margin-bottom: 15px
+        &__button
+            margin-top: 27px
+            padding-top: 28px
+            padding-bottom: 29px
+            font-size: 16px
+    &-phone
+        display: flex
+        flex-wrap: wrap
+        justify-content: center
+        margin-top: 27px
+        text-align: center
+        &__text-phone
+            +reg
+            max-width: 273px
+            margin-bottom: 13px
+            font-size: 15px
+        &__numb-phone
+            +bold
+            text-decoration: none
+            color: #333333
+            font-size: 24px
+@media (min-width: 992px)
+    .modal    
+        &-dialog
+            &__button    
+                &:hover
+                    background-color: lighten($main-color, 10%)
+                    cursor: pointer
+            &__close
+                &:hover
+                    cursor: pointer
+@media (max-width: 568px)
+    .modal
+        &-dialog
+            padding: 30px
+
+        
+        

@@ -1,0 +1,56 @@
+.security
+    padding-bottom: 225px
+    &__block
+        display: flex
+        flex-wrap: wrap
+        text-align: center
+        justify-content: center
+        align-items: center
+    &-blocks
+        display: flex
+        justify-content: space-around
+        align-items: end
+    &__img
+        border: 20px solid $secondary
+        min-height: 360px
+        max-width: 270px
+        margin-bottom: 30px
+
+        img
+            object-fit: contain
+            max-width: 100%
+    &__text
+        font-size: 18px
+        line-height: 24px
+        max-width: 300px
+
+    &__title
+        text-align: center
+        font-size: 30px
+        +bold
+        max-width: 660px
+        display: block
+        margin: auto
+        line-height: 1.6
+        margin-top: 36px
+        margin-bottom: 100px
+@media (max-width: 768px)
+    .security
+        padding-bottom: 83px
+        &-blocks
+            flex-wrap: wrap
+        &__title
+            font-size: 18px
+            max-width: 270px
+            max-width: 268px
+            line-height: 22px
+            margin-bottom: 51px
+        &__text
+            font-size: 14px
+            line-height: 18px
+            max-width: 232px
+            margin-bottom: 40px
+            &:last-child
+                margin-bottom: 0
+        
+        

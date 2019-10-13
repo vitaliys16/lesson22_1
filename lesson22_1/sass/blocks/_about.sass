@@ -1,0 +1,50 @@
+.about
+    &-block
+        display: flex
+        justify-content: center
+        align-items: center
+        height: 280px
+        background-color: $about-color
+    &__title
+        text-align: center
+        font-size: 32px
+        line-height: 1.6
+    &-description
+        display: flex
+        justify-content: space-between
+    &__item
+        margin-top: 14px
+        background-color: $secondary-about
+        max-width: 370px
+        height: 410px
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+    &__text
+        max-width: 300px
+        display: inline-block
+        margin-top: 19px
+        margin-left: 26px
+        font-size: 16px
+        line-height: 23px
+@media (max-width: 768px)
+    .about
+        padding: 50px 0 20px
+        &__title
+            font-size: 18px
+            line-height: 1.2
+        &-description
+            flex-wrap: wrap
+            justify-content: center
+        &-block
+            height: 230px
+            padding: 0 31px
+        &__text
+            font-size: 12px
+            line-height: 18px
+            margin-top: 13px
+            margin-left: 20px
+        &__item
+            max-width: 272px
+            height: 304px
+            margin-bottom: 14px

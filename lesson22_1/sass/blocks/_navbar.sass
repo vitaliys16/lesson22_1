@@ -1,0 +1,60 @@
+.navbar
+    padding: 8px 0
+    &-block
+        display: flex
+        justify-content: space-between
+        align-items: center
+    &-info
+        display: flex
+        align-items: center
+        text-align: right
+        &__button
+            border-radius: 10px
+            border: none
+            background-color: $main-color
+            font-size: 10px
+            padding: 18px 28px
+            font-size: 13px
+            font-weight: 700
+            +bold
+            &_left
+                margin-left: 30px
+    &-contacts
+        &__address
+            display: flex
+            flex-direction: column
+            font-size: 13px
+        &__phone
+            display: inline-block
+            color: $text-color
+            font-size: 20px
+            text-decoration: none
+            margin-top: 6px
+            +bold
+@media (min-width: 992px) 
+    .navbar
+        &-info
+            &__button
+                &:hover
+                    background-color: lighten($main-color, 10%)
+                    cursor: pointer
+
+
+@media (max-width: 1200px) and (min-width: 991px)
+    .navbar
+        padding: 8px 10px
+    
+@media (max-width: 768px)
+    .navbar
+        &-contacts
+            display: none
+        &-info    
+            &__button
+                +bold
+                font-size: 10px
+                padding: 14px 25px
+                border-radius: 5px
+                margin-right: 9px
+                margin-bottom: 4px
+        &-logo
+            width: 90px
