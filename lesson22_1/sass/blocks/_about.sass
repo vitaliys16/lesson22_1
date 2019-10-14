@@ -36,6 +36,8 @@
         &-description
             flex-wrap: wrap
             justify-content: center
+            flex-direction: column
+            align-items: center
         &-block
             height: 230px
             padding: 0 31px
@@ -48,3 +50,9 @@
             max-width: 272px
             height: 304px
             margin-bottom: 14px
+@media (max-width: 991px)
+    .about
+        &-description
+            flex-direction: column
+            justify-content: center
+            align-items: center

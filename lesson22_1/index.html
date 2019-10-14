@@ -65,7 +65,7 @@
                                     <img src="img/hero/calculator.png" alt="clock">  
                                   </div>
                                   <span class="hero-list__text">Рассчитаем смету на работы
-                                    и материалы в день обращения                                    
+                                    <br>и материалы в день обращения                                    
                                   </span>
                             </li>
                             <li class="hero-list__item">
@@ -101,11 +101,17 @@
                         Оставьте заявку на разработку 
     бесплатного дизайн-проекта!
                     </span>
-                <form class="form offer__form">
-                    <input type="text" class="input offer__input" placeholder="Ваше имя">
-                    <input type="tel" class="input offer__input" placeholder="Ваш телефон">
-                    <button class="button offer__button wow pulse">Получить бесплатный дизайн-проект
-                    </button>
+                <form class="form offer__form" id="offer-form">
+                    <div class="wrap-groups">
+                        <div class="input-group">
+                        <input type="text" name="username" class="input offer__input" placeholder="Ваше имя">
+                        </div>
+                        <div class="input-group">
+                        <input type="tel" name="phone" class="input offer__input phone" placeholder="Ваш телефон">
+                        </div>
+                    </div>
+                        <button class="button offer__button wow pulse">Получить бесплатный дизайн-проект
+                        </button>
                 </form>
                 <div class="offer-contacts">
                     <span class="offer-contacts__description">Наш менеджер перезвонит Вам в течение 60 секунд</span>
@@ -361,7 +367,7 @@
                         <div class="security__img">
                             <img src="img/security/doc-1.jpg" alt="">
                         </div>
-                        <span class="security__text">Гарантия на качество выполняемых работ
+                        <span class="security__text">Гарантия на качество выполняемых работ<br>
                         </span>
                     </div>
                     <div class="security__block">
@@ -441,7 +447,7 @@
     </main>
     <footer class="footer">
         <div class="map" id="map">
-                <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A26a4a06431f8cade9350a261743ed3f723a6c212792135c1d3823c9e550faaac&amp;width=100%25&amp;height=640&amp;lang=ru_RU&amp;scroll=false"></script>
+                <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A26a4a06431f8cade9350a261743ed3f723a6c212792135c1d3823c9e550faaac&amp;width=100%25&amp;height=640&amp;lang=ru_RU&amp;scroll=false&amp;drag=false"></script>
         </div>
         <div class="container">
             <div class="contacts-block">
@@ -490,9 +496,13 @@
             <h4 class="modal-dialog__title">Узнайте точную стоимость ремонта по телефону!</h4>
             <span class="modal-dialog__subtitle">Заполните поля ниже - мы свяжемся с Вами
             </span>
-            <form class="form modal-dialog__form">
-                <input type="text" class="modal-dialog__input" placeholder="Ваше имя">
-                <input type="tel" class="modal-dialog__input" placeholder="Ваш телефон">
+            <form class="form modal-dialog__form" id="modal-form">
+                <div class="input-group">
+                <input type="text" name="username" class="modal-dialog__input" placeholder="Ваше имя">
+                </div>
+                <div class="input-group">
+                <input type="tel" name="phone" class="modal-dialog__input phone" placeholder="Ваш телефон">
+                </div>
                 <button class="button modal-dialog__button">Узнать стоимость
                 </button>
                 <div class="modal-phone">
@@ -522,7 +532,9 @@
   <script src="js/jquery.maskedinput.min.js"></script>
   <script>
       /*Инициализация WOW*/
-    new WOW().init()
+    new WOW({
+        mobile: false
+    }).init();
     </script>
 </body>
 </html>

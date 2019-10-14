@@ -8,10 +8,21 @@ img
 .container
     max-width: 1170px
     margin: auto
+@media (max-width: 1200px) 
+    .wrap-groups
+        flex-wrap: wrap
+    .input
+        &-group
+            width: 100%  
+         
 @media (max-width: 991px)
+    .wrap-groups
+        flex-wrap: wrap
     .container
         max-width: 760px
-    .button
+    .input
+        &-group
+            width: 100%  
 
 @media (max-width: 768px)
     .container
@@ -55,18 +66,33 @@ img
     width: 240px
     &:focus
         border: 1px solid $main-color
-    &-group
-        position: relative
+
 div.invalid
     color: red
-    margin-top: -5px
-    margin-bottom: 10px
-    top: 0
-    left: 0
-    right: 0
-input.invalid
+    font-size: 13px
+    text-align: center
+    margin-top: -13px
+    margin-bottom: 0
+    text-align: center
+input.invalid, input.invalid-offer
     border: 1px solid red
 b
     +bold
 a
     text-decoration: none
+.wrap-groups
+    display: flex
+div.invalid-offer
+    color: red
+    font-size: 13px
+    text-align: center
+    margin-top: -30px
+    margin-bottom: 17px
+    text-align: center
+div.invalid-modal
+    color: red
+    font-size: 13px
+    text-align: center
+    margin-top: -30px
+    margin-bottom: 17px
+    text-align: center

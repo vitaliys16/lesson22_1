@@ -6,6 +6,14 @@
     height: 100%
     background-color: rgba(#000, 0.5)
     display: none
+    &__invalid
+        color: red
+        margin-top: -5px
+        margin-bottom: 10px
+        top: 0
+        left: 0
+        right: 0
+        font-size: 13px
     &_active
         display: flex
     &-dialog
@@ -43,6 +51,7 @@
             padding: 23px
             font-size: 15px
             border-radius: 10px
+            width: 100%
             &:first-child
                 margin-bottom: 15px
         &__button

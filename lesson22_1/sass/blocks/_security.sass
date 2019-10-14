@@ -1,5 +1,5 @@
 .security
-    padding-bottom: 225px
+    padding-bottom: 297px
     &__block
         display: flex
         flex-wrap: wrap
@@ -23,6 +23,9 @@
         font-size: 18px
         line-height: 24px
         max-width: 300px
+        display: block
+        height: 0
+
 
     &__title
         text-align: center
@@ -39,6 +42,11 @@
         padding-bottom: 83px
         &-blocks
             flex-wrap: wrap
+            flex-direction: column
+            justify-content: center
+            align-items: center
+        &__block
+            flex-direction: column
         &__title
             font-size: 18px
             max-width: 270px
@@ -50,6 +58,7 @@
             line-height: 18px
             max-width: 232px
             margin-bottom: 40px
+            height: auto
             &:last-child
                 margin-bottom: 0
         

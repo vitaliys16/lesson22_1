@@ -29,7 +29,7 @@
         padding: 23px 26px
         font-size: 16px
         border-radius: 10px
-        margin-bottom: 30px
+        margin-bottom: 28px
         width: 240px
         &:first-child
             margin-right: 10px
@@ -40,7 +40,7 @@
         font-size: 16.7px
         width: 100%
         min-height: 70px
-        margin-bottom: 29px
+        margin-bottom: 27px
         
     &-contacts
         display: flex
@@ -50,7 +50,7 @@
         &__description
             width: 228px
     &-phone
-        margin-right: 13px
+        margin-right: 9px
         &__text
             display: block
         &__numb
@@ -63,6 +63,10 @@
             &:hover
                 background-color: lighten($main-color, 10%)
                 cursor: pointer
+@media (max-width: 1200px)
+    .offer
+        &__input
+            width: 100%
 @media (max-width: 1200px) and (min-width: 991px)
     .offer
         padding-left: 10px
